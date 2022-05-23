@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'GoKit_Example' do
+  pod 'GoKit', :path => '../'
+
+  target 'GoKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
