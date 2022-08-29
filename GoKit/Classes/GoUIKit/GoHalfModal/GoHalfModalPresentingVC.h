@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UIColor *backgroundColor;
 
+@property (nonatomic, strong) UIColor *barViewBackgroundColor;
+
 @end
 
 NS_ASSUME_NONNULL_END

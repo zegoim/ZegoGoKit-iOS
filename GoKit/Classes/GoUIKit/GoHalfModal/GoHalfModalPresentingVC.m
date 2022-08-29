@@ -58,6 +58,10 @@
   self.barView.layer.cornerRadius = 2;
 }
 
+- (void)setBarViewBackgroundColor:(UIColor *)barViewBackgroundColor {
+  self.barView.backgroundColor = barViewBackgroundColor;
+}
+
 - (void)dismiss {
   [self dismissViewControllerAnimated:YES completion:nil];
 }

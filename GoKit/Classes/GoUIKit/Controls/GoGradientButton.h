@@ -17,6 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 渐变结束色
 @property (nonatomic, strong) UIColor *endColor;
 
+/**
+ * 可用来重写
+ */
+- (void)setupSubviews;
+
 @end
 
 NS_ASSUME_NONNULL_END

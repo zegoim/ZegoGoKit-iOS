@@ -9,5 +9,7 @@
 #define GoUIKit_h
 
 #import "GoNotice.h"
+#import "GoClickRangeSlider.h"
+#import "GoGradientButton.h"
 
 #endif /* GoUIKit_h */

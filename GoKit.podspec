@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/zegoim/ZegoGoKit-iOS'
+  s.homepage         = 'http://dev.coding.zego.cloud/p/ios_components/d/GoKit/git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Vic' => 'vicwan@zego.im' }
-  s.source           = { :git => 'git@github.com:zegoim/ZegoGoKit-iOS.git', :tag => s.version.to_s }
+  s.source           = { :git => 'http://git.e.coding.zego.cloud/dev/ios_components/GoKit.git', :tag => s.version.to_s }
   
   s.ios.deployment_target = '9.0'
   s.resource_bundles = {
@@ -40,11 +40,28 @@ TODO: Add long description of the pod here.
       sss.source_files = 'GoKit/Classes/GoUIKit/GoHalfModal/*'
       sss.dependency 'GoKit/GoUtils'
     end
+    
+    ss.subspec 'Categories' do |sss|
+      sss.source_files = 'GoKit/Classes/GoUIKit/Categories/*'
+      sss.dependency 'GoKit/GoUtils'
+    end
+    
+    ss.subspec 'Controls' do |sss|
+      sss.source_files = 'GoKit/Classes/GoUIKit/Controls/*'
+      sss.dependency 'GoKit/GoUtils'
+    end
+    
   end
   
   s.subspec 'GoUtils' do |ss|
     ss.source_files = 'GoKit/Classes/GoUtils/**/*.{h,m}'
     ss.frameworks = 'AVFoundation', 'Photos'
+  end
+  
+  s.subspec 'GoDataReport' do |ss|
+    ss.dependency 'YTKNetwork'
+
+    ss.source_files = 'GoKit/Classes/GoDataReport/**/*.{h,m}'
   end
   
 end
